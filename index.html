@@ -255,14 +255,14 @@
         <!-- ESCENA 1: Introducción -->
         <section class="scene" id="scene-intro">
             <div style="background: rgba(255, 215, 0, 0.15); border: 1px solid #ffd700; padding: 10px 20px; border-radius: 20px; margin-bottom: 25px; backdrop-filter: blur(5px);" class="hidden-text">
-                <span style="font-size: 0.9rem; color: #ffd700;">📌 Mensajito especial para ti:</span>
+                <span style="font-size: 0.9rem; color: #ffd700;">📌 Un detalle especial preparado para ti:</span>
             </div>
             <h1 class="hidden-text">¡Holiiiiiiiiiiii! ✨</h1>
             <p class="hidden-text" style="font-size: 1.4rem; color: #fff; font-weight: bold;">
                 Que tengas un excelente día así de bonito como tú, bonita. ❤️
             </p>
             <p class="hidden-text" style="font-size: 1rem; opacity: 0.8;">
-                Te extraño ❤️
+                Pensando en ti desde temprano ❤️
             </p>
             <div class="btn-container hidden-text">
                 <button class="glow-btn" onclick="nextScene('garden')">Presiona aquí ✨</button>
@@ -271,41 +271,41 @@
 
         <!-- ESCENA 2: Revelar Jardín -->
         <section class="scene" id="scene-garden" style="background: transparent;">
-            <h1 class="hidden-text" style="margin-top: -200px; text-shadow: 0 0 20px #000, 0 0 10px #000;">Tengo algo especial que mostrarte...</h1>
+            <h1 class="hidden-text" style="margin-top: -200px; text-shadow: 0 0 20px #000, 0 0 10px #000;">Quería prepararte un momento especial...</h1>
         </section>
 
         <!-- ESCENA 3: Transición -->
         <section class="scene" id="scene-transition" style="background: rgba(0,0,0,0.2);">
             <h1 class="hidden-text">Te traje este jardín bajo las estrellas...</h1>
-            <p class="hidden-text" style="color: var(--yellow-sunflower); font-weight: bold;">Mis flores favoritas para mi persona favorita. 💛</p>
+            <p class="hidden-text" style="color: var(--yellow-sunflower); font-weight: bold;">Porque alguien tan maravillosa e increíble merece flores que brillen tanto como tú. 💛</p>
         </section>
 
-        <!-- ESCENA 4: Pregunta Principal (Declaración de Amor) -->
+        <!-- ESCENA 4: Pregunta Principal (Declaración de Amor Caballerosa) -->
         <section class="scene" id="scene-question" style="background: rgba(0,0,0,0.5);">
-            <h1 class="hidden-text highlight">¿QUIERES SER MI POLOLA? ❤️</h1>
-            <p class="hidden-text">Llevo tiempo queriendo decírtelo... Me encantas muchísimo y me haría la persona más feliz del mundo ser tu pololo. ✨</p>
+            <h1 class="hidden-text highlight">¿ME HARÍAS EL HONOR DE SER MI POLOLA? ❤️</h1>
+            <p class="hidden-text">Desde que te conocí supe que eres alguien muy especial. Me encantaría cuidarte, valorarte y hacerte la persona más feliz cada día. ✨</p>
             <div class="btn-container hidden-text">
-                <button class="yes-btn" onclick="handleYes(1)">SÍ ❤️</button>
+                <button class="yes-btn" onclick="handleYes(1)">SÍ, ACEPTO ❤️</button>
                 <button class="no-btn" onclick="nextScene('sad-response')">NO 💔</button>
             </div>
         </section>
 
-        <!-- ESCENA 5: Respuesta Triste -->
+        <!-- ESCENA 5: Respuesta Respetuosa -->
         <section class="scene" id="scene-sad-response">
-            <h1 class="hidden-text">Está bien... 💔</h1>
-            <p class="hidden-text">Entiendo si no sientes lo mismo por mí...</p>
-            <p class="hidden-text">Me daría un poquito de tristeza porque de verdad me gustas mucho, pero aprecio tu sinceridad.</p>
-            <p class="hidden-text">No te preocupes, valoraré siempre lo increíble que eres y respeto tu decisión.</p>
-            <p class="hidden-text">Pero antes de darme por vencido... ¿de verdad esa es tu respuesta final? 🥺</p>
+            <h1 class="hidden-text">Entiendo perfectamente... 💔</h1>
+            <p class="hidden-text">Tus sentimientos y tu tranquilidad siempre serán lo más importante para mí.</p>
+            <p class="hidden-text">Aprecio sinceramente tu honestidad y cada bonito momento que hemos compartido.</p>
+            <p class="hidden-text">Siempre te respetaré y me quedaré con lo maravillosa que eres como persona.</p>
+            <p class="hidden-text">Solo quería saber con total sinceridad... ¿de verdad es un no definitivo? 🥺</p>
             <div class="btn-container hidden-text">
-                <button class="glow-btn" onclick="nextScene('second-chance')">Siguiente...</button>
+                <button class="glow-btn" onclick="nextScene('second-chance')">Ver más...</button>
             </div>
         </section>
 
         <!-- ESCENA 6: Segunda Oportunidad (Botón Evasivo) -->
         <section class="scene" id="scene-second-chance">
-            <h1 class="hidden-text">¿En serio elegiste que no? 🥺</h1>
-            <p class="hidden-text" id="evasive-msg">Aún estás a tiempo de decirme que sí... piénsalo bien ❤️</p>
+            <h1 class="hidden-text">¿En serio me vas a decir que no? 🥺</h1>
+            <p class="hidden-text" id="evasive-msg">Dame una oportunidad de demostrarte lo bonita que puede ser nuestra historia ❤️</p>
             <div class="btn-container hidden-text" style="min-height: 120px; position: relative;">
                 <button class="yes-btn" onclick="handleYes(2)">¡SÍ, QUIERO SER TU POLOLA! ❤️</button>
                 <button class="no-btn" id="runaway-btn" style="transition: transform 0.2s ease-out;">NO 💔</button>
@@ -314,21 +314,21 @@
 
         <!-- ESCENA 7: Celebración (SÍ) -->
         <section class="scene" id="scene-celebration" style="background: rgba(0,0,0,0.5);">
-            <h1 class="hidden-text highlight">¡SÍIIII! ❤️</h1>
+            <h1 class="hidden-text highlight">¡ME HACES EL MÁS FELIZ! ❤️</h1>
             <p class="hidden-text" style="font-size: 1.3rem;">
-                ¡Sabía que dirías que sí! Prometo hacerte muy, muy feliz todos los días. ✨
+                Prometo respetarte, cuidarte y dar lo mejor de mí todos los días para hacerte sonreír. ✨
             </p>
             <p class="hidden-text" style="font-size: 1rem; opacity: 0.9;">
-                ¡Ya es oficial! Ahora eres mi polola hermosa. ❤️
+                Gracias por darme esta oportunidad tan hermosa. Ahora eres mi polola bella. ❤️
             </p>
-            <h2 class="hidden-text romantic-text" style="font-size: 2.5rem; margin-top: 15px;">¡ME ENCANTAS! ❤️</h2>
+            <h2 class="hidden-text romantic-text" style="font-size: 2.5rem; margin-top: 15px;">¡ERES INCREÍBLE! ❤️</h2>
         </section>
 
         <!-- ESCENA 8: Captura -->
         <section class="scene" id="scene-screenshot" style="background: rgba(0,0,0,0.7);">
-            <h1 class="hidden-text">Ahora mándame una captura de pantalla de tu respuesta ❤️</h1>
+            <h1 class="hidden-text">Mándame una captura de pantalla de este momento especial ❤️</h1>
             <div class="btn-container hidden-text">
-                <button class="glow-btn" onclick="alert('¡Me haces la persona más feliz! ❤️')">📸 Ya tengo mi captura</button>
+                <button class="glow-btn" onclick="alert('¡Prometo cuidar tu corazón siempre! ❤️')">📸 Ya tengo mi captura</button>
             </div>
         </section>
     </div>
@@ -411,7 +411,7 @@
 
         /* LÓGICA DEL BOTÓN EVASIVO */
         const runawayBtn = document.getElementById('runaway-btn');
-        const evasiveMsgs = ["¿Segura? 🥺", "Piénsalo otra vez...", "¡Mira lo bonito que la pasaríamos juntos! ❤️", "Di que sí por favor 😭"];
+        const evasiveMsgs = ["¿De verdad? 🥺", "Dame la oportunidad de hacerte feliz...", "Prometo cuidarte muchísimo ❤️", "Piénsalo un poquito más 😭"];
         let evasionCount = 0;
         let currentX = 0;
         let currentY = 0;
