@@ -252,20 +252,20 @@
     <!-- Contenedor Principal de Escenas -->
     <div id="scene-container">
         
-        <!-- ESCENA 1: Buenos Días -->
+        <!-- ESCENA 1: Introducción -->
         <section class="scene" id="scene-intro">
             <div style="background: rgba(255, 215, 0, 0.15); border: 1px solid #ffd700; padding: 10px 20px; border-radius: 20px; margin-bottom: 25px; backdrop-filter: blur(5px);" class="hidden-text">
-                <span style="font-size: 0.9rem; color: #ffd700;">📌 Recordatorio especial para hoy:</span>
+                <span style="font-size: 0.9rem; color: #ffd700;">📌 Mensajito especial para ti:</span>
             </div>
-            <h1 class="hidden-text">¡Buenos días, mi vida! ☀️</h1>
+            <h1 class="hidden-text">¡Holiiiiiiiiiiii! ✨</h1>
             <p class="hidden-text" style="font-size: 1.4rem; color: #fff; font-weight: bold;">
-                Que tengas un excelente día en tu jornada laboral, amor. 💼❤️
+                Que tengas un excelente día así de bonito como tú, bonita. ❤️
             </p>
             <p class="hidden-text" style="font-size: 1rem; opacity: 0.8;">
-                Recuerda que aquí voy a estar pensando en ti.
+                Te extraño ❤️
             </p>
             <div class="btn-container hidden-text">
-                <button class="glow-btn" onclick="nextScene('garden')">Tengo un detalle para ti ✨</button>
+                <button class="glow-btn" onclick="nextScene('garden')">Presiona aquí ✨</button>
             </div>
         </section>
 
@@ -417,14 +417,12 @@
         let currentY = 0;
 
         function moveButton() {
-            // Saltos pequeños de 40px a 70px
             const deltaX = (Math.random() * 30 + 40) * (Math.random() > 0.5 ? 1 : -1);
             const deltaY = (Math.random() * 30 + 40) * (Math.random() > 0.5 ? 1 : -1);
 
             currentX += deltaX;
             currentY += deltaY;
 
-            // Límite máximo para mantenerlo cerca sin que escape fuera de la pantalla
             const maxLimit = 90;
             currentX = Math.max(-maxLimit, Math.min(maxLimit, currentX));
             currentY = Math.max(-maxLimit, Math.min(maxLimit, currentY));
@@ -437,7 +435,6 @@
             }
         }
 
-        // Eventos para mover el botón tanto al pasar el cursor como al hacer clic/presionar
         runawayBtn.addEventListener('mouseenter', moveButton);
 
         runawayBtn.addEventListener('click', (e) => {
