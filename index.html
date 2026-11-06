@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
-    <title>Feliz Aniversario Amor</title>
+    <title>Tengo algo que decirte ✨</title>
     <style>
         /* =========================================
            VARIABLES Y RESET GLOBALES
@@ -271,7 +271,7 @@
 
         <!-- ESCENA 2: Revelar Jardín -->
         <section class="scene" id="scene-garden" style="background: transparent;">
-            <h1 class="hidden-text" style="margin-top: -200px; text-shadow: 0 0 20px #000, 0 0 10px #000;">Para alegrar tu día...</h1>
+            <h1 class="hidden-text" style="margin-top: -200px; text-shadow: 0 0 20px #000, 0 0 10px #000;">Tengo algo especial que mostrarte...</h1>
         </section>
 
         <!-- ESCENA 3: Transición -->
@@ -280,10 +280,10 @@
             <p class="hidden-text" style="color: var(--yellow-sunflower); font-weight: bold;">Mis flores favoritas para mi persona favorita. 💛</p>
         </section>
 
-        <!-- ESCENA 4: Pregunta Principal -->
+        <!-- ESCENA 4: Pregunta Principal (Declaración de Amor) -->
         <section class="scene" id="scene-question" style="background: rgba(0,0,0,0.5);">
-            <h1 class="hidden-text highlight">FELIZ ANIVERSARIO, AMOR MÍO ❤️</h1>
-            <p class="hidden-text">¿Te gustaría continuar juntos por muchos más meses, hasta donde el destino nos permita?</p>
+            <h1 class="hidden-text highlight">¿QUIERES SER MI POLOLA? ❤️</h1>
+            <p class="hidden-text">Llevo tiempo queriendo decírtelo... Me encantas muchísimo y me haría la persona más feliz del mundo ser tu pololo. ✨</p>
             <div class="btn-container hidden-text">
                 <button class="yes-btn" onclick="handleYes(1)">SÍ ❤️</button>
                 <button class="no-btn" onclick="nextScene('sad-response')">NO 💔</button>
@@ -293,10 +293,10 @@
         <!-- ESCENA 5: Respuesta Triste -->
         <section class="scene" id="scene-sad-response">
             <h1 class="hidden-text">Está bien... 💔</h1>
-            <p class="hidden-text">Si de verdad ya no quieres continuar conmigo, solo dímelo.</p>
-            <p class="hidden-text">Me dolería muchísimo, porque te amo y todo lo que hemos vivido significa demasiado para mí.</p>
-            <p class="hidden-text">Pero también sé que el amor no puede obligar a nadie a quedarse. Respetaré tu decisión.</p>
-            <p class="hidden-text">Solo quiero estar seguro... ¿de verdad es lo que quieres?</p>
+            <p class="hidden-text">Entiendo si no sientes lo mismo por mí...</p>
+            <p class="hidden-text">Me daría un poquito de tristeza porque de verdad me gustas mucho, pero aprecio tu sinceridad.</p>
+            <p class="hidden-text">No te preocupes, valoraré siempre lo increíble que eres y respeto tu decisión.</p>
+            <p class="hidden-text">Pero antes de darme por vencido... ¿de verdad esa es tu respuesta final? 🥺</p>
             <div class="btn-container hidden-text">
                 <button class="glow-btn" onclick="nextScene('second-chance')">Siguiente...</button>
             </div>
@@ -305,9 +305,9 @@
         <!-- ESCENA 6: Segunda Oportunidad (Botón Evasivo) -->
         <section class="scene" id="scene-second-chance">
             <h1 class="hidden-text">¿En serio elegiste que no? 🥺</h1>
-            <p class="hidden-text" id="evasive-msg">Si todavía quieres seguir conmigo… todavía puedes hacerlo.</p>
+            <p class="hidden-text" id="evasive-msg">Aún estás a tiempo de decirme que sí... piénsalo bien ❤️</p>
             <div class="btn-container hidden-text" style="min-height: 120px; position: relative;">
-                <button class="yes-btn" onclick="handleYes(2)">SÍ, QUIERO SEGUIR ❤️</button>
+                <button class="yes-btn" onclick="handleYes(2)">¡SÍ, QUIERO SER TU POLOLA! ❤️</button>
                 <button class="no-btn" id="runaway-btn" style="transition: transform 0.2s ease-out;">NO 💔</button>
             </div>
         </section>
@@ -316,19 +316,19 @@
         <section class="scene" id="scene-celebration" style="background: rgba(0,0,0,0.5);">
             <h1 class="hidden-text highlight">¡SÍIIII! ❤️</h1>
             <p class="hidden-text" style="font-size: 1.3rem;">
-                ¿Creíste que te librarías de mi? Claro que no amoshita, tú y yo juntos por siempre. ✨
+                ¡Sabía que dirías que sí! Prometo hacerte muy, muy feliz todos los días. ✨
             </p>
             <p class="hidden-text" style="font-size: 1rem; opacity: 0.9;">
-                Pero aunque fuera de broma, si en algún momento pasa algo inesperado, dímelo al momento.
+                ¡Ya es oficial! Ahora eres mi polola hermosa. ❤️
             </p>
-            <h2 class="hidden-text romantic-text" style="font-size: 2.5rem; margin-top: 15px;">¡TE AMOOOOOOOOO! ❤️</h2>
+            <h2 class="hidden-text romantic-text" style="font-size: 2.5rem; margin-top: 15px;">¡ME ENCANTAS! ❤️</h2>
         </section>
 
         <!-- ESCENA 8: Captura -->
         <section class="scene" id="scene-screenshot" style="background: rgba(0,0,0,0.7);">
-            <h1 class="hidden-text">Ahora mándame una captura de pantalla de que elegiste que sí ❤️</h1>
+            <h1 class="hidden-text">Ahora mándame una captura de pantalla de tu respuesta ❤️</h1>
             <div class="btn-container hidden-text">
-                <button class="glow-btn" onclick="alert('¡Te amo muchísimo! ❤️')">📸 Ya tengo mi captura</button>
+                <button class="glow-btn" onclick="alert('¡Me haces la persona más feliz! ❤️')">📸 Ya tengo mi captura</button>
             </div>
         </section>
     </div>
@@ -411,7 +411,7 @@
 
         /* LÓGICA DEL BOTÓN EVASIVO */
         const runawayBtn = document.getElementById('runaway-btn');
-        const evasiveMsgs = ["¿Segura? 🥺", "Piénsalo otra vez...", "Todavía puedes decir que sí ❤️", "No te rindas tan rápido 😭"];
+        const evasiveMsgs = ["¿Segura? 🥺", "Piénsalo otra vez...", "¡Mira lo bonito que la pasaríamos juntos! ❤️", "Di que sí por favor 😭"];
         let evasionCount = 0;
         let currentX = 0;
         let currentY = 0;
